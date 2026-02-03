@@ -1,0 +1,256 @@
+/* Estilos para la página de Historial */
+.historial-page {
+  padding: 1rem 0;
+}
+
+.historial-page .page-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.header-actions {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  flex-grow: 1;
+  justify-content: flex-end;
+}
+
+.search-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  background: #f1f5f9;
+  border-radius: 8px;
+  padding: 0 1rem;
+  width: 100%;
+  max-width: 400px;
+  border: 1px solid transparent;
+  transition: all 0.2s;
+}
+
+.search-container:focus-within {
+  background: white;
+  border-color: #27AE60;
+  box-shadow: 0 0 0 3px rgba(39, 174, 96, 0.1);
+}
+
+.search-icon {
+  margin-right: 0.5rem;
+  color: #64748b;
+}
+
+.search-input {
+  border: none;
+  background: transparent;
+  padding: 0.6rem 0;
+  outline: none;
+  width: 100%;
+  font-size: 0.875rem;
+  color: #1e293b;
+}
+
+.search-input::placeholder {
+  color: #94a3b8;
+}
+
+.historial-page .card {
+  background-color: white;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.historial-page .table-container {
+  overflow-x: auto;
+}
+
+.historial-page table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.historial-page th,
+.historial-page td {
+  padding: 1rem;
+  text-align: left;
+  border-bottom: 1px solid #f1f5f9;
+}
+
+.historial-page th {
+  font-weight: 600;
+  color: #64748b;
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  background-color: #f8fafc;
+}
+
+.historial-page tr:hover {
+  background-color: #f8fafc;
+}
+
+.historial-page .error {
+  color: #ef4444;
+  background-color: #fee2e2;
+  padding: 1rem;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+.btn-sm {
+  padding: 0.4rem 0.8rem;
+  font-size: 0.8rem;
+}
+
+.action-buttons {
+  display: flex;
+  gap: 0.5rem;
+}
+
+/* Estilos para el Modal de Vista Previa */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  backdrop-filter: blur(4px);
+}
+
+.modal-content {
+  background: white;
+  width: 95%;
+  max-width: 850px;
+  max-height: 90vh;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+.modal-header {
+  padding: 1.25rem 1.5rem;
+  border-bottom: 1px solid #f1f5f9;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f8fafc;
+  border-radius: 12px 12px 0 0;
+}
+
+.modal-header h3 {
+  margin: 0;
+  color: #1e293b;
+  font-size: 1.25rem;
+}
+
+.close-btn {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  color: #94a3b8;
+  cursor: pointer;
+}
+
+.close-btn:hover {
+  color: #64748b;
+}
+
+.modal-body {
+  padding: 1.5rem;
+  overflow-y: auto;
+  flex-grow: 1;
+}
+
+.preview-visual {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.preview-section h4 {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  color: #64748b;
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  border-bottom: 2px solid #f1f5f9;
+  padding-bottom: 0.5rem;
+}
+
+.info-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+  background: #f8fafc;
+  padding: 1.25rem;
+  border-radius: 8px;
+  border: 1px solid #e2e8f0;
+}
+
+.info-item {
+  font-size: 0.9375rem;
+  color: #334155;
+}
+
+.info-item strong {
+  color: #64748b;
+  margin-right: 0.5rem;
+}
+
+.info-item.full-width {
+  grid-column: 1 / -1;
+}
+
+.small-table table th,
+.small-table table td {
+  padding: 0.75rem;
+  font-size: 0.875rem;
+}
+
+.preview-totals {
+  align-self: flex-end;
+  width: 100%;
+  max-width: 300px;
+  background: #f8fafc;
+  padding: 1.25rem;
+  border-radius: 8px;
+  border: 1px solid #e2e8f0;
+}
+
+.total-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+  font-size: 0.9375rem;
+  color: #475569;
+}
+
+.total-final {
+  margin-top: 0.75rem;
+  padding-top: 0.75rem;
+  border-top: 2px solid #e2e8f0;
+  font-weight: 700;
+  color: #1e293b;
+  font-size: 1.125rem;
+}
+
+.modal-footer {
+  padding: 1.25rem 1.5rem;
+  border-top: 1px solid #f1f5f9;
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+}

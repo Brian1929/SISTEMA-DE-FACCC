@@ -1,0 +1,74 @@
+[
+  {
+    "numero": "#-2026-0038",
+    "cliente": "aaaaa",
+    "fecha": "2026-02-02T14:44:40.545064",
+    "impuesto": 0.0,
+    "notas": "",
+    "items": [
+      {
+        "producto": {
+          "codigo": "TEST",
+          "nombre": "Test",
+          "precio": 100.0
+        },
+        "cantidad": 1.0,
+        "descuento": 0.0
+      }
+    ]
+  },
+  {
+    "numero": "#-2026-0058",
+    "cliente": "Juanito",
+    "fecha": "2026-02-02T16:06:48.186486",
+    "impuesto": 0.0,
+    "notas": "",
+    "items": [
+      {
+        "producto": {
+          "codigo": "2525",
+          "nombre": "case",
+          "precio": 2500.0
+        },
+        "cantidad": 1.0,
+        "descuento": 0.0
+      }
+    ]
+  },
+  {
+    "numero": "#-2026-0061",
+    "cliente": "Julio",
+    "fecha": "2026-02-02T16:16:14.440218",
+    "impuesto": 0.0,
+    "notas": "",
+    "items": [
+      {
+        "producto": {
+          "codigo": "2525",
+          "nombre": "case",
+          "precio": 2500.0
+        },
+        "cantidad": 1.0,
+        "descuento": 0.0
+      }
+    ]
+  },
+  {
+    "numero": "#-2026-0064",
+    "cliente": "ttt",
+    "fecha": "2026-02-02T16:19:21.245568",
+    "impuesto": 16.0,
+    "notas": "",
+    "items": [
+      {
+        "producto": {
+          "codigo": "TEST",
+          "nombre": "Test",
+          "precio": 100.0
+        },
+        "cantidad": 1.0,
+        "descuento": 0.0
+      }
+    ]
+  }
+]

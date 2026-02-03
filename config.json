@@ -1,0 +1,12 @@
+{
+    "nombre_sistema": "BrianTech",
+    "ultimo_numero_factura": 65,
+    "prefijo_factura": "#",
+    "formato_factura": "{prefijo}-{año}-{numero:04d}",
+    "impuesto_default": 0.0,
+    "nombre_empresa": "BrianTech",
+    "direccion_empresa": "Santiago, Rpublica Dominicana",
+    "telefono_empresa": "Tel: 849-711-2919",
+    "email_empresa": "brianpolanco95@gmail.com",
+    "rfc_empresa": ""
+}
